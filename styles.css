@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono');
+
+* {
+}
+
+body {
+    background-color: #062310; 
+    width: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navi { 
+    margin: 5%;
+    padding: 5%;
+    width: 70rem;
+    display: grid; 
+    background-color: #48D35F;
+    color: #ffffff; 
+    font-size: 3rem;
+    grid-template-columns: max-content;
+    grid-template-rows: auto auto auto;  
+    font-family: 'Fira Mono', monospace;
+    grid-gap: 30px; 
+    border-radius: 30px;
+}
+ 
+.navi-item { 
+    background-color: #48D35F;
+    border-radius: 30px;
+    width: max-content;
+    height:auto;
+}
+
+.navi-item span { 
+    background-color: #48D35F;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.navi-item span:hover{
+    background-color: #EDFFEC;
+    color: #5A5766; 
+}
+
+
+.navi-item:focus + .hiddendiv { 
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative; 
+    left: 10rem;
+    height: auto;
+    font-size: 2rem;
+    border-radius: 30px;
+    background-color: #EDFFEC;
+    color: #5A5766; 
+    width: 60rem; 
+}
+
+.hiddendiv {
+    display:none;
+    width: 70rem;
+}
