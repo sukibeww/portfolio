@@ -172,6 +172,23 @@ header{
 }
 
 
+.nav-orbit>div:hover {
+    -webkit-animation-play-state:paused;
+    -moz-animation-play-state:paused;
+    -o-animation-play-state:paused;
+    animation-play-state:paused;
+}
+
+.nav-orbit>div:hover div{
+    -webkit-animation-play-state:paused;
+    -moz-animation-play-state:paused;
+    -o-animation-play-state:paused;
+    animation-play-state:paused;
+    cursor: pointer;
+}
+
+
+
 @-webkit-keyframes spin-right1 {
     50%{
         -webkit-transform: rotate(-160deg);
