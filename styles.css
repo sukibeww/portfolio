@@ -3,21 +3,21 @@
     margin: 0px;
 }
 
-html {
-    width: 1440px;
-}
-
 body {
-    padding-right: 300px;
-    padding-left: 300px;
-    background-color: white;
+    width: 100%;
+    height: 100%;
+    background-color: #292526;
+    
 }
 
 header{ 
-    position: fixed;
+    position: relative;
     right: 10px;
     width: 100%; 
-    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .nav-orbit {
@@ -42,7 +42,6 @@ header{
     border-radius: 100%;
     animation: spin-right1 30s linear infinite;
     z-index: 1;
-    opacity: 0.8;
 }
 
 .about {
@@ -53,8 +52,8 @@ header{
     height: max-content;
     padding: 30px;
     border-radius: 100%;
-    font-size: 1.5em;
-    font-family: 'Exo 2', sans-serif;
+    font-size: 1em;
+    font-family: 'Bungee', cursive;
     background: #EDEDED;
     animation: maintain1 30s linear infinite;
 }
@@ -72,7 +71,6 @@ header{
     animation-delay: 1s;
     background-image: url(./assets/background-close-up-cold-1451484.jpg);
     z-index: 2;
-    opacity: 0.8;
 }
 .skills {
     position: relative;
@@ -83,8 +81,8 @@ header{
     height: max-content;
     border-radius: 100%;
     padding: 30px;
-    font-size: 1.5em;
-    font-family: 'Exo 2', sans-serif;
+    font-size: 1em;
+    font-family: 'Bungee', cursive;
     color: black;
     animation: maintain2 25s linear infinite;
     animation-delay: 1s;
@@ -103,7 +101,6 @@ header{
     background-image: url(/assets/art-background-close-up-1939485.jpg);
     animation-delay: 2s;
     z-index: 3;
-    opacity: 0.8;
 }
 
 .projects {
@@ -115,8 +112,8 @@ header{
     height: max-content;
     border-radius: 100%;
     padding: 30px;
-    font-size: 1.5em;
-    font-family: 'Exo 2', sans-serif;
+    font-size: 1em;
+    font-family: 'Bungee', cursive;
     color: black;
     animation: maintain3 20s linear infinite;
     animation-delay: 2s;
@@ -134,7 +131,6 @@ header{
     animation: spin-right4 20s linear infinite;
     z-index: 4;
     background-image: url(/assets/backdrop-background-floor-921776.jpg);
-    opacity: 0.8;
 }
 
 .contact { 
@@ -147,8 +143,8 @@ header{
     top: 20%;
     right: 8%;
     padding: 30px;
-    font-size: 1.5em;
-    font-family: 'Exo 2', sans-serif;
+    font-size: 1em;
+    font-family: 'Bungee', cursive;
     color: black;
     animation: maintain4 20s linear infinite;
 }
@@ -198,7 +194,7 @@ header{
         transform: rotate(-160deg);
     }
 } 
-@keyframes maintain1 {
+@-webkit-keyframes maintain1 {
     
     50% {
         -webkit-transform: rotate(160deg);
@@ -206,27 +202,6 @@ header{
         -ms-transform: rotate(160deg);
         -o-transform: rotate(160deg);
         transform: rotate(160deg);
-    }
-}
-
-@keyframes spin-right4 {
-    50%{
-        -webkit-transform: rotate(-140deg);
-        -moz-transform: rotate(-140deg);
-        -ms-transform: rotate(-140deg);
-        -o-transform: rotate(-140deg);
-        transform: rotate(-140deg)
-    }
-} 
-
-@keyframes maintain4 {
-    
-    50% {
-        -webkit-transform: rotate(140deg);
-        -moz-transform: rotate(140deg);
-        -ms-transform: rotate(140deg);
-        -o-transform: rotate(140deg);
-        transform: rotate(140deg);
     }
 }
 
@@ -239,7 +214,7 @@ header{
         transform: rotate(-160deg);
     }
 } 
-@keyframes maintain2 {
+@-webkit-keyframes maintain2 {
     
     50% {
         -webkit-transform: rotate(160deg);
@@ -260,7 +235,7 @@ header{
     }
 } 
 
-@keyframes maintain3 {
+@-webkit-keyframes maintain3 {
     
     50% {
         -webkit-transform: rotate(150deg);
@@ -270,12 +245,89 @@ header{
         transform: rotate(150deg);
     }
 }
+
 @-webkit-keyframes spin-right4 {
-    100%{
-        -webkit-transform: rotate(360deg);
-        -moz-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        -o-transform: rotate(360deg);
-        transform: rotate(360deg);
+    50%{
+        -webkit-transform: rotate(-140deg);
+        -moz-transform: rotate(-140deg);
+        -ms-transform: rotate(-140deg);
+        -o-transform: rotate(-140deg);
+        transform: rotate(-140deg)
     }
-}   
+} 
+
+@-webkit-keyframes maintain4 {
+    
+    50% {
+        -webkit-transform: rotate(140deg);
+        -moz-transform: rotate(140deg);
+        -ms-transform: rotate(140deg);
+        -o-transform: rotate(140deg);
+        transform: rotate(140deg);
+    }
+}
+
+#split{
+    position: fixed;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+.left-section{
+    grid-template-columns: min-content min-content min-content;
+    grid-auto-rows: span 1 span 1;
+    display: grid;
+    grid-auto-flow: dense;
+    background: #EDEDED;
+    color: black;
+    grid-gap: 3px;
+    border: #ffffff solid 3px;
+    font-family: 'Bungee', cursive;
+}
+
+.left-section span {
+    background-color: #292526;
+    color: white;
+}
+
+.right-section{
+    background-image: url(/assets/edit-code-closeup.png);
+    width: 100%; 
+    height: 100%;
+    background-repeat: repeat-y;
+    background-size: contain;
+}
+
+.bigger{
+    font-size: 10vh;
+    grid-column: span 4; 
+
+}
+
+.big {
+    font-size: 8vh;
+    grid-column: span 3; 
+}
+
+.small {
+    font-size: 6vh;
+    grid-column: span 2; 
+}
+
+.smaller {
+    font-size: 4vh;
+    grid-column: span 1; 
+}
+
+#intro {
+    position: absolute;
+    top: 55%;
+    width: 1200px;
+    height: 400px;
+    background-color: #E8EEF4;
+    border-width: 10px;
+    border-radius: 50px;
+}
