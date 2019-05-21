@@ -123,6 +123,59 @@ header {
     transition: opacity 150ms ease-in-out ;
 }
 
+.intro { 
+    display: flex;
+    flex-direction: row;
+    width:100vw;
+    padding-top: 20vh;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* .overflow-div {
+    overflow: hidden;
+} */
+
+.pp {
+    position: relative;
+    bottom: 13vh;
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pp img {
+    position: relative;
+    border-radius: 100%;
+    /* height: 20rem;
+    width: 20rem; */
+    height: auto;
+    width: auto;
+    z-index: 100;
+}
+.intro-text { 
+    z-index: 1;
+    display: flex;
+    height: minmax(min-content, 30vh);
+    position: relative;
+    bottom: 20vh;
+    left: 2vw;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start; 
+    background-color: #292526;
+    padding: 3rem;
+    border-radius: 2rem;
+    color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 900;   
+}
+
+.text span{
+    color: #9A38FC;
+}
+
 @media screen and (min-width: 800px) { 
     .nav-toggle-label{
         display: none;
@@ -132,16 +185,17 @@ header {
         display: grid;
         width: 100vw;
         overflow: hidden;
-        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+        grid-template-columns: auto 1fr   1fr minmax(600px, 3fr);
     }
 
     .logo {
-        grid-column: 2 / 3; 
+        grid-column: 1/ 2; 
     }
 
     .simple-navbar {
         all: unset; 
-        grid-column: 3 / 4; 
+        grid-column: 4 / 5; 
+        padding-right: 2vw;
         display: flex; 
         justify-content: flex-end;
         align-items: center;
@@ -202,14 +256,10 @@ header {
         flex-direction: row-reverse;
     }
 
-    /* .overflow-div {
-        overflow: hidden;
-    } */
 
     .pp {
         position: relative;
         bottom: 13vh;
-        right: 15vh;
         display: flex; 
         flex-direction: row-reverse;
     }
@@ -241,21 +291,5 @@ header {
         font-family: 'Montserrat Alternates', sans-serif;
         font-size: 3.5rem;
         font-weight: 900;   
-    }
-
-    .hover-orbit{
-        align-self: flex-end;   
-        position: relative;
-        left: 10rem;
-        bottom: 2rem;
-    }
-
-    .hover-orbit img:hover{
-        transform: rotate(360deg);
-        transition: transform 1s;
-    }
-
-    .text span{
-        color: #9A38FC;
     }
 }
