@@ -126,6 +126,7 @@ header {
 .intro { 
     display: flex;
     flex-direction: row;
+    justify-content: center;
     width:100vw;
     padding-top: 20vh;
     display: flex;
@@ -262,6 +263,7 @@ header {
     .intro { 
         display: flex;
         flex-direction: row-reverse;
+        justify-content: flex-start;
         width:100vw;
         padding-top: 30vh;
         display: flex;
