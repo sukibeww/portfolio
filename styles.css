@@ -126,8 +126,10 @@ header {
 .intro { 
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     width:100vw;
+    padding-left: 3vw;
+    padding-right: 5vw;
     padding-top: 20vh;
     display: flex;
     flex-direction: row-reverse;
@@ -169,7 +171,7 @@ header {
     border-radius: 2rem;
     color: white;
     font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 3.5rem;
+    font-size: 9vw;
     font-weight: 900;   
     flex-shrink: 0;
     flex-wrap: nowrap;
