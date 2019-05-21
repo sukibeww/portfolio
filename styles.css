@@ -132,9 +132,6 @@ header {
     flex-direction: row-reverse;
 }
 
-/* .overflow-div {
-    overflow: hidden;
-} */
 
 .pp {
     position: relative;
@@ -153,7 +150,9 @@ header {
     width: auto;
     z-index: 100;
 }
+
 .intro-text { 
+    overflow:hidden;
     z-index: 1;
     display: flex;
     height: minmax(min-content, 30vh);
@@ -165,16 +164,29 @@ header {
     align-items: flex-start; 
     background-color: #292526;
     padding: 3rem;
+    padding-right: 0;
     border-radius: 2rem;
     color: white;
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 3.5rem;
     font-weight: 900;   
+    flex-shrink: 0;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+.text {
+    flex-shrink: 0;
+    white-space: nowrap;
 }
 
 .text span{
     color: #9A38FC;
+    white-space: nowrap;
 }
+
+
+/* DESKTOP */
 
 @media screen and (min-width: 800px) { 
     .nav-toggle-label{
@@ -236,7 +248,7 @@ header {
     .logo{
         display: flex; 
         flex-direction: row;
-        align-items: center;
+        justify-content: flex-end;
         font-size: 3rem;
         color: #E8EEF4;
     }
