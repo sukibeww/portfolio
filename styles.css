@@ -123,16 +123,18 @@ header {
     transition: opacity 150ms ease-in-out ;
 }
 
+
 .intro { 
+    overflow: hidden;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     width:100vw;
-    padding-left: 1vw;
-    padding-right: 5vw;
+    /* padding-left: 1vw; */
+    /* padding-right: 5vw; */
     padding-top: 23vh;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 
 
@@ -155,7 +157,6 @@ header {
 }
 
 .intro-text { 
-    overflow:hidden;
     z-index: 1;
     display: flex;
     height: minmax(min-content, 30vh);
@@ -168,12 +169,10 @@ header {
     align-items: flex-start; 
     background-color: #292526;
     padding: 3rem;
-    padding-left: 1rem;
-    padding-right: 0;
     border-radius: 2rem;
     color: white;
     font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 9vw;
+    font-size: 8vw;
     font-weight: 900;   
     flex-shrink: 0;
     flex-wrap: nowrap;
@@ -193,7 +192,7 @@ header {
 
 /* DESKTOP */
 
-@media screen and (min-width: 800px) { 
+@media screen and (min-width: 1025px) { 
     .nav-toggle-label{
         display: none;
     }
@@ -264,6 +263,10 @@ header {
         width: 6rem;
     }
 
+    .overflow-div{
+        overflow: unset;
+    }
+
     .intro { 
         display: flex;
         flex-direction: row-reverse;
@@ -293,7 +296,7 @@ header {
         z-index: 1;
         display: flex;
         height: minmax(min-content, 30vh);
-        width: 60vw;
+        width: 55vw;
         position: relative;
         bottom: 33vh;
         left: 2vw;
