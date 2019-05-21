@@ -265,6 +265,7 @@ header {
 
     .overflow-div{
         overflow: unset;
+        height: 60vh;
     }
 
     .intro { 
@@ -295,7 +296,7 @@ header {
     .intro-text { 
         z-index: 1;
         display: flex;
-        height: minmax(min-content, 30vh);
+        height: minmax(min-content, 20vh);
         width: 55vw;
         position: relative;
         bottom: 33vh;
@@ -311,5 +312,15 @@ header {
         font-family: 'Montserrat Alternates', sans-serif;
         font-size: 3.5rem;
         font-weight: 900;   
+    }
+
+    .divider{
+        background-image: url(/assets/divider.svg); 
+        width: 100vw;
+        height: 20vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: #292526 1.5vh solid;
+        background-color: #292526;
     }
 }
