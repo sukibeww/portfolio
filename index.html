@@ -9,19 +9,15 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Medula+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:700|Raleway&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <a href="#intro"></a>
-            <img src="/assets/LogoMakr_0AGPcd.png" alt="logo" style="display:inline-block">
-            <span style="display:inline-block">Sukianto Suteja </span>
-        </div>
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
         <div class="simple-navbar">
             <ul>
-                <li><a href="#">About</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#">Skills</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Contact</a></li>
@@ -30,6 +26,11 @@
         <label for="nav-toggle" class="nav-toggle-label">
             <span></span>
         </label>
+        <div class="logo">
+            <a href="#intro"></a>
+            <img src="/assets/LogoMakr_0AGPcd.png" alt="logo" style="display:inline-block">
+            <span style="display:inline-block">Sukianto Suteja </span>
+        </div>
     </header>
     <div class="intro" id="intro">
         <div class="overflow-div">
@@ -53,76 +54,125 @@
         </div>
     </div>
     <div class="divider"></div>
-    <div class="about">
-        <h1>About Me</h1>
-        <p>
-            Here's a few highlight of my life that lead me to pursue a career in development. 
-        </p>
-        <div class="timeline">
-            <h1>
-                Failed 5th Grade 
-            </h1>
-            <p>
-                I used to hate going to school and studying in general, because I didn't have any motivation and purpose to put a lot of effort into my study. I failed 5th grade and I saw the dissapointment on my parents face and it became my motivation to keep those kind of faces out of my parents. 
-            </p>
-        </div>
+    <div class="about-wrapper">
+        <div class="about" id="about">
+            <div id="highlight-wrapper">
+                <div class="about-me-title">
+                    About me
+                </div>
+                <!-- <p>
+                Here's a few highlight of my life that lead me to pursue a career in software development.
+            </p> -->
+                <input type="checkbox" id="about-toggle5" class="about-toggle">
+                <label for="about-toggle5" class="about-toggle-label">
+                    <div class="timeline" id="highlight5">
+                        <h1>
+                            Coding Bootcamp
+                        </h1>
+                        <p>
+                            I'm seeking the practical experience that I'm lacking and currently studying web
+                            development
+                            in
+                            CoderAcademy.
+                        </p>
+                    </div>
+                </label>
 
-        <div class="timeline">
-            <h1>
-                Tried Visual Basic 
-            </h1>
-            <p>
-                There was a Visual Basic extracurricular on my highschool and out of curiousity I applied and happened to enjoyed it very much but I never thought that will pursue programming as my career. 
-            </p>
-        </div>
 
-        <div class="timeline">
-            <h1>
-                Choosing Computer Study Over Law 
-            </h1>
-            <p>
-                My mindset was pretty much the same since, I failed 5th grade and I did a research to find  the most respectable field of study in order make my parents proud. Until my parents sat me down and talked me through, they changed my mindset and I decided to pursue a career or study with my well-being as the priority.
-            </p>
-        </div>
+                <input type="checkbox" id="about-toggle4" class="about-toggle">
+                <label for="about-toggle4" class="about-toggle-label">
+                    <div class="timeline" id="highlight4">
+                        <h1>
+                            Bachelor's degree
+                        </h1>
+                        <p>
+                            I have mixed feeling towards my study in University. I enjoyed the study but, it was a bit
+                            too
+                            theoretical and it didn't provide me with enough practical experience. Generally, it was a
+                            fruitful
+                            experience but it wasn't enough for me.
+                        </p>
+                    </div>
+                </label>
 
-        <div class="timeline">
-            <h1>
-                Bachelor's degree in Computer Science 
-            </h1>
-            <p>
-                I have mixed feeling towards my study in University. I enjoyed the study but, it was a bit too theoretical and it didn't provide me with enough practical experience. Generally, it was a fruitful experience but it wasn't enough for me.  
-            </p>
-        </div>
 
-        <div class="timeline">
-            <h1>
-                Coding Bootcamp 
-            </h1>
-            <p>
-                I'm seeking the practical experience that I'm lacking and currently I'm studying web development in CoderAcademy. 
-            </p>
+                <input type="checkbox" id="about-toggle3" class="about-toggle">
+                <label for="about-toggle3" class="about-toggle-label">
+                    <div class="timeline" id="highlight3">
+                        <h1>
+                            Computer > Law
+                        </h1>
+                        <p>
+                            My mindset was pretty much the same since, I failed 5th grade and I did a research to find
+                            the
+                            most
+                            respectable field of study in order make my parents proud. Until my parents sat me down and
+                            talked
+                            me through, they changed my mindset and I decided to pursue a career or study with my
+                            well-being
+                            as
+                            the priority.
+                        </p>
+                    </div>
+                </label>
+
+
+                <input type="checkbox" id="about-toggle2" class="about-toggle">
+                <label for="about-toggle2" class="about-toggle-label">
+                    <div class="timeline" id="highlight2">
+                        <h1>
+                            Tried Visual Basic
+                        </h1>
+                        <p>
+                            There was a Visual Basic extracurricular on my highschool and out of curiousity I applied
+                            and
+                            happened to enjoyed it very much but I never thought that will pursue programming as my
+                            career.
+                        </p>
+                    </div>
+                </label>
+
+
+                <input type="checkbox" id="about-toggle1" class="about-toggle">
+                <label for="about-toggle1" class="about-toggle-label">
+                    <div class="timeline" id="highlight1">
+                        <h1>
+                            Failed 5th Grade
+                        </h1>
+                        <p>
+                            I used to hate going to school and studying in general, because I didn't have any motivation
+                            and
+                            purpose to put a lot of effort into my study. I failed 5th grade and I saw the
+                            disappointment on
+                            my
+                            parents face and it became my motivation to keep those kind of faces out of my parents.
+                        </p>
+                    </div>
+                </label>
+
+            </div>
         </div>
     </div>
     <div class="divider"></div>
     <form name="contact" method="POST" data-netlify="true">
         <p>
-          <label>Your Name: <input type="text" name="name" /></label>   
+            <label>Your Name: <input type="text" name="name" /></label>
         </p>
         <p>
-          <label>Your Email: <input type="email" name="email" /></label>
+            <label>Your Email: <input type="email" name="email" /></label>
         </p>
         <p>
-          <label>Your Role: <select name="role[]" multiple>
-            <option value="leader">Leader</option>
-            <option value="follower">Follower</option>
-          </select></label>
+            <label>Your Role: <select name="role[]" multiple>
+                    <option value="leader">Leader</option>
+                    <option value="follower">Follower</option>
+                </select></label>
         </p>
         <p>
-          <label>Message: <textarea name="message"></textarea></label>
+            <label>Message: <textarea name="message"></textarea></label>
         </p>
         <p>
-          <button type="submit">Send</button>
+            <button type="submit">Send</button>
         </p>
-      </form>
+    </form>
     </div>
 </body>

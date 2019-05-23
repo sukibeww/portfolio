@@ -60,16 +60,6 @@ header {
     display: none;
 }
 
-.nav-toggle-label {
-    position: absolute;
-    top: 0; 
-    left: 0; 
-    margin-left: 1em;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
 .nav-toggle-label span,
 .nav-toggle-label span::before,
 .nav-toggle-label span::after { 
@@ -93,6 +83,16 @@ header {
 .nav-toggle-label span::after{ 
     top: 10px;
 } 
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
 
 .nav-toggle:checked ~ .simple-navbar{
     transform: scale(1,1);
@@ -130,9 +130,10 @@ header {
     flex-direction: row;
     justify-content: center;
     width:100vw;
+    height: 80vh;
     /* padding-left: 1vw; */
     /* padding-right: 5vw; */
-    padding-top: 23vh;
+    padding-top: 30vh;
     display: flex;
     flex-direction: row;
 }
@@ -189,7 +190,126 @@ header {
     white-space: nowrap;
 }
 
+.divider{
+    background-image: url(/assets/divider.svg); 
+    width: 100vw;
+    height: 10vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: #292526 1.5vh solid;
+    border-bottom: #292526 1.5vh solid;
+    background-color: #292526;
+}
 
+.about-toggle{
+    display: none; 
+}
+
+.about-toggle-label {
+    position: relative;
+    width: max-content;
+    height: max-content;
+    padding: 3vw;
+    display: flex;
+    bottom: 0;
+    left: 0;
+}
+
+.about-wrapper {
+    background: rgb(41, 37, 38, 0.5);
+}
+
+.about {
+    transform: scale(0.8);
+    overflow-x: visible;
+    position: relative;
+    /* left: 3vw; */
+    display: flex;
+    justify-content: center;
+    /* background-color: #292526; */
+    border-radius: 30px; 
+}
+
+.timeline h1 {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 8vw;
+    margin-bottom: 3vw;
+}
+
+.timeline p {   
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 4vw;
+}
+
+#highlight1{
+    /* z-index: 5; */
+    width: 70vw;
+    /* height: 20vw; */
+    background: #9A38FC;
+    color: white;
+}
+
+#highlight2{
+    /* z-index: 4; */
+    width: 70vw;
+    /* height: 30vw; */
+    background: white;
+}
+
+#highlight3{
+    /* z-index: 3; */
+    width: 70vw;
+    /* height: 40vw; */
+    background: #FED9FF;
+    color: #9A38FC;
+}
+
+#highlight4 {
+    /* z-index: 2; */
+    width: 70vw;
+    /* height: 50vw; */
+    color: white;
+    background: #9A38FC;
+}
+
+#highlight5 {
+    /* z-index: 1; */
+    width: 70vw;
+    /* height: 60vw; */
+    background: white;
+}
+
+
+#highlight-wrapper { 
+    opacity: 1;
+    width: 80vw;
+    height: 80vw;
+    background-color: #292526;
+    padding: 1vw;
+    border-radius: 3vw;
+    transform: rotate(10deg);
+    overflow-y: scroll;
+    overflow-x: visible;
+    /* z-index: 100; */
+}
+
+.about-me-title{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 10vw;
+    color: white;
+    /* align-self: flex-start; */
+    font-weight: 900;
+    /* padding-top: 15vh; */
+    /* transform: rotate(10deg) */
+}
+
+.timeline { 
+    position: relative;
+    border-radius: 2vw;
+    padding: 10px; 
+    height: min-content;
+}   
 /* DESKTOP */
 
 @media screen and (min-width: 1025px) { 
@@ -247,6 +367,31 @@ header {
 
     .simple-navbar a:hover::before {
         transform: scale(1,1);
+    }
+
+    .about-toggle{
+        display: none; 
+    }
+    
+    .about-toggle-label {
+        position: absolute;
+        width: max-content;
+        height: max-content;
+        padding: 3vw;
+        display: flex;
+        bottom: 0;
+        left: 0;
+        flex-direction: column;
+    }
+
+    .nav-toggle-label {
+        position: absolute;
+        top: 0; 
+        left: 0; 
+        margin-left: 1em;
+        height: 100%;
+        display: flex;
+        align-items: center;
     }
 
     .logo{
@@ -323,4 +468,108 @@ header {
         border: #292526 1.5vh solid;
         background-color: #292526;
     }
+
+    .about-wrapper {
+        background: rgb(41, 37, 38, 0.5);
+    }
+
+    .about {
+        transform: scale(0.5);
+        position: relative;
+        /* left: 3vw; */
+        display: flex;
+        justify-content: center;
+        /* background-color: #292526; */
+        border-radius: 30px; 
+    }
+
+    .timeline h1 {
+        font-family: 'Catamaran', sans-serif;
+        font-size: 8vh;
+        margin-bottom: 3vw;
+    }
+
+    .timeline p {   
+        display: block;
+        font-family: 'Raleway', sans-serif;
+        font-size: 4vh;
+    }
+
+    #highlight1{
+        /* z-index: 5; */
+        width: 70vw;
+        height: 20vw;
+        background: #9A38FC;
+        color: white;
+    }
+
+    #highlight2{
+        /* z-index: 4; */
+        width: 70vw;
+        height: 30vw;
+        background: white;
+    }
+
+    #highlight3{
+        /* z-index: 3; */
+        width: 70vw;
+        height: 40vw;
+        background: #FED9FF;
+        color: #9A38FC;
+    }
+
+    #highlight4 {
+        /* z-index: 2; */
+        width: 70vw;
+        height: 50vw;
+        color: white;
+        background: #9A38FC;
+    }
+
+    #highlight5 {
+        /* z-index: 1; */
+        width: 70vw;
+        height: 60vw;
+        background: white;
+    }
+
+
+    #highlight-wrapper { 
+        opacity: 1;
+        width: 80vw;
+        height: 80vw;
+        background-color: #292526;
+        padding: 1vw;
+        border-radius: 3vw;
+        transform: rotate(10deg);
+        overflow: hidden;
+        /* z-index: 100; */
+    }
+
+    .about-me-title{
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 10rem;
+        color: white;
+        /* align-self: flex-start; */
+        font-weight: 900;
+        /* padding-top: 15vh; */
+        /* transform: rotate(10deg) */
+    }
+
+    .timeline { 
+        position: relative;
+        display:inline-block;
+        border-radius: 2vw;
+        padding: 10px;  
+        padding-left: 30px;
+        overflow: hidden;
+        /* height: 20vh; */
+    }   
+
+    .about-toggle-label:hover {
+        z-index: 1;
+        /* opacity: 0.5; */
+        transform: scale(1.05);
+        transition: transform ease-in-out 300ms;
+    } 
 }
