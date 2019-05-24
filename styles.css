@@ -4,7 +4,7 @@
     scroll-behavior: smooth;
 }
 
-:root{
+:root {
     --background: #292526;
 }
 
@@ -38,51 +38,52 @@ header {
     cursor: pointer;
 }
 
-.logo img{
+.logo img {
     padding: 0;
     height: 3rem;
     width: 3rem;
 }
 
-.simple-navbar { 
+.simple-navbar {
     position: absolute;
     text-align: left;
     top: 100%;
     left: 0;
     background: var(--background);
     width: 100vw;
-    transform: scale(1,0);
+    transform: scale(1, 0);
     transform-origin: top;
     transition: transform 400ms ease-in-out;
 }
 
-.nav-toggle{
+.nav-toggle {
     display: none;
 }
 
 .nav-toggle-label span,
 .nav-toggle-label span::before,
-.nav-toggle-label span::after { 
+.nav-toggle-label span::after {
     display: block;
     background-color: #E8EEF4;
     height: 1px;
     border-radius: 20%;
     width: 1.5em;
     position: relative;
-} 
+}
 
 .nav-toggle-label span::before,
-.nav-toggle-label span::after { 
+.nav-toggle-label span::after {
     content: '';
     position: absolute;
-} 
+}
 
-.nav-toggle-label span::before{ 
+.nav-toggle-label span::before {
     bottom: 10px;
-} 
-.nav-toggle-label span::after{ 
+}
+
+.nav-toggle-label span::after {
     top: 10px;
-} 
+}
 
 .nav-toggle-label {
     position: absolute;
@@ -94,20 +95,20 @@ header {
     align-items: center;
 }
 
-.nav-toggle:checked ~ .simple-navbar{
-    transform: scale(1,1);
+.nav-toggle:checked~.simple-navbar {
+    transform: scale(1, 1);
 }
 
-.nav-toggle:checked ~ .simple-navbar a{
+.nav-toggle:checked~.simple-navbar a {
     opacity: 1;
     transition: opacity 200ms ease-in-out 200ms;
 }
 
-.simple-navbar ul { 
+.simple-navbar ul {
     list-style: none;
 }
 
-.simple-navbar li { 
+.simple-navbar li {
     margin-left: 1em;
     margin-bottom: 1em;
     font-family: 'Montserrat Alternates', sans-serif;
@@ -120,16 +121,16 @@ header {
     /* text-transform: uppercase; */
     text-size-adjust: 1.2rem;
     opacity: 0;
-    transition: opacity 150ms ease-in-out ;
+    transition: opacity 150ms ease-in-out;
 }
 
 
-.intro { 
+.intro {
     overflow: hidden;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width:100vw;
+    width: 100vw;
     height: 80vh;
     /* padding-left: 1vw; */
     /* padding-right: 5vw; */
@@ -142,7 +143,7 @@ header {
 .pp {
     position: relative;
     bottom: 13vh;
-    display: flex; 
+    display: flex;
     flex-direction: row;
     justify-content: center;
 }
@@ -157,7 +158,7 @@ header {
     z-index: 100;
 }
 
-.intro-text { 
+.intro-text {
     z-index: 1;
     display: flex;
     height: minmax(min-content, 30vh);
@@ -167,14 +168,14 @@ header {
     left: 2vw;
     justify-content: space-between;
     flex-direction: column;
-    align-items: flex-start; 
+    align-items: flex-start;
     background-color: #292526;
     padding: 3rem;
     border-radius: 2rem;
     color: white;
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 8vw;
-    font-weight: 900;   
+    font-weight: 900;
     flex-shrink: 0;
     flex-wrap: nowrap;
     white-space: nowrap;
@@ -185,13 +186,13 @@ header {
     white-space: nowrap;
 }
 
-.text span{
+.text span {
     color: #9A38FC;
     white-space: nowrap;
 }
 
-.divider{
-    background-image: url(/assets/divider.svg); 
+.divider {
+    background-image: url(/assets/divider.svg);
     width: 100vw;
     height: 10vh;
     background-repeat: no-repeat;
@@ -201,8 +202,8 @@ header {
     background-color: #292526;
 }
 
-.about-toggle{
-    display: none; 
+.about-toggle {
+    display: none;
 }
 
 .about-toggle-label {
@@ -216,7 +217,7 @@ header {
 }
 
 .about-wrapper {
-    background: rgb(41, 37, 38, 0.5);
+    background: rgba(78, 43, 52, 0.5);
 }
 
 .about {
@@ -227,7 +228,7 @@ header {
     display: flex;
     justify-content: center;
     /* background-color: #292526; */
-    border-radius: 30px; 
+    border-radius: 30px;
 }
 
 .timeline h1 {
@@ -236,13 +237,13 @@ header {
     margin-bottom: 3vw;
 }
 
-.timeline p {   
+.timeline p {
     display: block;
     font-family: 'Raleway', sans-serif;
     font-size: 4vw;
 }
 
-#highlight1{
+#highlight1 {
     /* z-index: 5; */
     width: 70vw;
     /* height: 20vw; */
@@ -250,14 +251,14 @@ header {
     color: white;
 }
 
-#highlight2{
+#highlight2 {
     /* z-index: 4; */
     width: 70vw;
     /* height: 30vw; */
     background: white;
 }
 
-#highlight3{
+#highlight3 {
     /* z-index: 3; */
     width: 70vw;
     /* height: 40vw; */
@@ -281,7 +282,7 @@ header {
 }
 
 
-#highlight-wrapper { 
+#highlight-wrapper {
     opacity: 1;
     width: 80vw;
     height: 80vw;
@@ -294,7 +295,7 @@ header {
     /* z-index: 100; */
 }
 
-.about-me-title{
+.about-me-title {
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 10vw;
     color: white;
@@ -304,35 +305,123 @@ header {
     /* transform: rotate(10deg) */
 }
 
-.timeline { 
+.timeline {
     position: relative;
     border-radius: 2vw;
-    padding: 10px; 
+    padding: 10px;
     height: min-content;
-}   
+}
+
+
+.skill-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vw;
+    background-color: rgb(41, 37, 38, 0.8);
+    overflow: hidden;
+}
+
+.skill-wrapper div {
+    position: absolute;
+    /* width: 0; 
+    height: 0; */
+}
+
+.skill-toggle-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: white;
+    z-index: 10;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 800;
+    font-size: 3vw;
+    height: 10vw;
+    width: 10vw;
+    background-color: #9A38FC;
+    border-radius: 100%;
+}
+
+.skill-toggle {
+    display: none;
+}
+
+#skill1 img {
+    width: 75vw;
+    height: 75vw;
+}
+
+#skill2 img {
+    width: 45vw;
+    height: 45vw;
+}
+#skill3 img {
+    width: 25vw;
+    height: 25vw;
+}
+
+.skill-toggle:checked ~ div {
+    opacity: 1;
+    transition: all linear 300ms;
+}
+
+.skill-toggle:checked ~ div img{
+    animation: spin-right 20s infinite;
+}
+
+
+.skill-toggle:not(:checked) ~ div {
+    opacity: 0;
+    transition: all linear 300ms;
+}
+
+@keyframes spin-right {
+    0% {
+        transform: rotate(0deg);
+      } 
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin-left {
+    0% {
+        transform: rotate(0deg);
+      }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
 /* DESKTOP */
 
-@media screen and (min-width: 1025px) { 
-    .nav-toggle-label{
+@media screen and (min-width: 1000px) {
+    .nav-toggle-label {
         display: none;
     }
 
-    header{
+    header {
         display: grid;
         width: 100vw;
         overflow: hidden;
-        grid-template-columns: auto 1fr   1fr minmax(600px, 3fr);
+        grid-template-columns: auto 1fr 1fr minmax(600px, 3fr);
+        grid-template-rows: max-content max-content;
     }
 
     .logo {
-        grid-column: 1/ 2; 
+        grid-column: 1/ 2;
     }
 
     .simple-navbar {
-        all: unset; 
-        grid-column: 4 / 5; 
+        all: unset;
+        grid-column: 4 / 5;
+        grid-row: 1 / 2;
         padding-right: 2vw;
-        display: flex; 
+        display: flex;
         justify-content: flex-end;
         align-items: center;
     }
@@ -351,7 +440,7 @@ header {
         position: relative;
     }
 
-    .simple-navbar a::before{
+    .simple-navbar a::before {
         content: '';
         opacity: 1;
         display: block;
@@ -361,18 +450,18 @@ header {
         bottom: 1.5em;
         left: 0;
         right: 0;
-        transform: scale(0,1);
+        transform: scale(0, 1);
         transition: transform ease-in-out 250ms;
     }
 
     .simple-navbar a:hover::before {
-        transform: scale(1,1);
+        transform: scale(1, 1);
     }
 
-    .about-toggle{
-        display: none; 
+    .about-toggle {
+        display: none;
     }
-    
+
     .about-toggle-label {
         position: absolute;
         width: max-content;
@@ -386,38 +475,38 @@ header {
 
     .nav-toggle-label {
         position: absolute;
-        top: 0; 
-        left: 0; 
+        top: 0;
+        left: 0;
         margin-left: 1em;
         height: 100%;
         display: flex;
         align-items: center;
     }
 
-    .logo{
-        display: flex; 
+    .logo {
+        display: flex;
         flex-direction: row;
         justify-content: flex-end;
         font-size: 3rem;
         color: #E8EEF4;
     }
-    
-    .logo img{
+
+    .logo img {
         padding: 0;
         height: 6rem;
         width: 6rem;
     }
 
-    .overflow-div{
+    .overflow-div {
         overflow: unset;
         height: 60vh;
     }
 
-    .intro { 
+    .intro {
         display: flex;
         flex-direction: row-reverse;
         justify-content: flex-start;
-        width:100vw;
+        width: 100vw;
         padding-top: 30vh;
         display: flex;
         flex-direction: row-reverse;
@@ -427,7 +516,7 @@ header {
     .pp {
         position: relative;
         bottom: 13vh;
-        display: flex; 
+        display: flex;
         flex-direction: row-reverse;
     }
 
@@ -438,7 +527,8 @@ header {
         width: auto;
         z-index: 100;
     }
-    .intro-text { 
+
+    .intro-text {
         z-index: 1;
         display: flex;
         height: minmax(min-content, 20vh);
@@ -448,7 +538,7 @@ header {
         left: 2vw;
         justify-content: space-between;
         flex-direction: column;
-        align-items: flex-start; 
+        align-items: flex-start;
         background-color: #292526;
         padding: 3rem;
         /* padding-right: 20rem; */
@@ -456,11 +546,11 @@ header {
         color: white;
         font-family: 'Montserrat Alternates', sans-serif;
         font-size: 3.5rem;
-        font-weight: 900;   
+        font-weight: 900;
     }
 
-    .divider{
-        background-image: url(/assets/divider.svg); 
+    .divider {
+        background-image: url(/assets/divider.svg);
         width: 100vw;
         height: 20vh;
         background-repeat: no-repeat;
@@ -480,7 +570,7 @@ header {
         display: flex;
         justify-content: center;
         /* background-color: #292526; */
-        border-radius: 30px; 
+        border-radius: 30px;
     }
 
     .timeline h1 {
@@ -489,13 +579,13 @@ header {
         margin-bottom: 3vw;
     }
 
-    .timeline p {   
+    .timeline p {
         display: block;
         font-family: 'Raleway', sans-serif;
         font-size: 4vh;
     }
 
-    #highlight1{
+    #highlight1 {
         /* z-index: 5; */
         width: 70vw;
         height: 20vw;
@@ -503,14 +593,14 @@ header {
         color: white;
     }
 
-    #highlight2{
+    #highlight2 {
         /* z-index: 4; */
         width: 70vw;
         height: 30vw;
         background: white;
     }
 
-    #highlight3{
+    #highlight3 {
         /* z-index: 3; */
         width: 70vw;
         height: 40vw;
@@ -534,7 +624,7 @@ header {
     }
 
 
-    #highlight-wrapper { 
+    #highlight-wrapper {
         opacity: 1;
         width: 80vw;
         height: 80vw;
@@ -546,7 +636,7 @@ header {
         /* z-index: 100; */
     }
 
-    .about-me-title{
+    .about-me-title {
         font-family: 'Montserrat Alternates', sans-serif;
         font-size: 10rem;
         color: white;
@@ -556,20 +646,29 @@ header {
         /* transform: rotate(10deg) */
     }
 
-    .timeline { 
+    .timeline {
         position: relative;
-        display:inline-block;
+        display: inline-block;
         border-radius: 2vw;
-        padding: 10px;  
+        padding: 10px;
         padding-left: 30px;
         overflow: hidden;
         /* height: 20vh; */
-    }   
+    }
 
     .about-toggle-label:hover {
         z-index: 1;
         /* opacity: 0.5; */
         transform: scale(1.05);
         transition: transform ease-in-out 300ms;
-    } 
+    }
+
+    .skill-toggle-label {
+        font-size: 3vw;
+    }
+
+    .skill-toggle:checked ~ div {
+        transform: scale(1);
+        transition: all linear 300ms;
+    }
 }
