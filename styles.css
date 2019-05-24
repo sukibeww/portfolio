@@ -217,6 +217,10 @@ header {
 }
 
 .about-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: rgba(78, 43, 52, 0.5);
 }
 
@@ -319,7 +323,7 @@ header {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     background-color: rgb(41, 37, 38, 0.8);
     overflow: hidden;
 }
@@ -339,9 +343,9 @@ header {
     z-index: 10;
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 800;
-    font-size: 3vw;
-    height: 10vw;
-    width: 10vw;
+    font-size: 10vw;
+    height: 20vw;
+    width: 20vw;
     background-color: #9A38FC;
     border-radius: 100%;
 }
@@ -351,17 +355,27 @@ header {
 }
 
 #skill1 img {
-    width: 75vw;
-    height: 75vw;
+    position: relative;
+    width: 60vw;
+    height: 60vw;
+    opacity: 0.8;
 }
 
 #skill2 img {
-    width: 45vw;
-    height: 45vw;
+    position: relative;
+    right: 20vw;
+    bottom: 30vh;
+    width: 40vw;
+    height: 40vw;
+    opacity: 0.8;
 }
 #skill3 img {
-    width: 25vw;
-    height: 25vw;
+    position: relative;
+    left: 20vw;
+    top: 30vh;
+    width: 40vw;
+    height: 40vw;
+    opacity: 0.8; 
 }
 
 .skill-toggle:checked ~ div {
@@ -369,14 +383,14 @@ header {
     transition: all linear 300ms;
 }
 
-.skill-toggle:checked ~ div img{
-    animation: spin-right 20s infinite;
+.skill-toggle ~ div img{
+    animation: spin-right linear     20s infinite;
 }
 
 
 .skill-toggle:not(:checked) ~ div {
     opacity: 0;
-    transition: all linear 300ms;
+    transition: all linear 100ms;
 }
 
 @keyframes spin-right {
@@ -399,9 +413,9 @@ header {
 
 /* DESKTOP */
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1050px) {
     .nav-toggle-label {
-        display: none;
+        opacity: 0;
     }
 
     header {
@@ -557,6 +571,7 @@ header {
         background-size: cover;
         border: #292526 1.5vh solid;
         background-color: #292526;
+        overflow-x: hidden;
     }
 
     .about-wrapper {
@@ -670,5 +685,31 @@ header {
     .skill-toggle:checked ~ div {
         transform: scale(1);
         transition: all linear 300ms;
+    }
+
+    #skill1 img {
+        position: relative;
+        width: 50vw;
+        height: 50vw;
+        opacity: 0.8;
+    }
+    
+    #skill2 img {
+        position: relative;
+        right: 30vw;
+        width: 40vw;
+        height: 40vw;
+        opacity: 0.8;
+    }
+    #skill3 img {
+        position: relative;
+        left: 30vw;
+        width: 40vw;
+        height: 40vw;
+        opacity: 0.8; 
+    }
+
+    .skill-wrapper {
+        height: 150vh;
     }
 }
