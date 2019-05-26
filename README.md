@@ -14,15 +14,18 @@ My first website portfolio, created with only HTML and CSS within a week and a h
 ##Purpose
 The main purpose of this portfolio is to experience and experiment around CSS and HTML. This project also encouraged me to train my designing skill and to express my personality into my design. 
 
-###Functionality 
+##Functionality 
 Since this portfolio is made purely out of CSS and HTML, it only offers few functionality, such as : 
 * Navigation 
 * Nested scrolling 
 * Minor Animation
 * Transition 
-* Links 
+* Links
 
-###Sitemap
+
+---
+
+##Sitemap
 This portfolio only consist of a single page seperated into few sections, which are: 
 * Introduction
 * About me
@@ -30,13 +33,16 @@ This portfolio only consist of a single page seperated into few sections, which 
 * Projects 
 * Contact me 
 
-###Screenshots 
+---
+#Screenshots 
 
-####Desktop
+##Desktop
 ![Desktop](/assets/desktop-ver.png "Desktop browser")
 
-###Mobile 
+##Mobile 
 ![Mobile](/assets/mobile-ver.png "Mobile browser")
+
+---
 
 #Design process 
 
@@ -51,6 +57,7 @@ This logo is heavily insipred by Nintendo Switch's logo, I realise that nintendo
 The tool that i used to create this logo:  
 Logomakr : [Click here!](https://logomakr.com/)
 
+---
 #Project management 
 
 ![Trello](assets\trello.JPG "Trello-board")
