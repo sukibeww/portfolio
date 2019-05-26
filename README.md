@@ -47,7 +47,7 @@ This portfolio only consist of a single page seperated into few sections, which 
 # Design process 
 
 ## Mood board 
-![Moodboard](/assets/moodboard.png "Moodboard")
+![Moodboard](/assets/moodboard.PNG "Moodboard")
 My design is the amalgamation between cyperpunk and scandinavian interior art. I choose scandinavian interior art because I personality think they are very soothing and calming to look at and cyberpunk to add my personality to the design itself. 
 
 ## Personal logo 
