@@ -20,16 +20,15 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#skill2">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
         <label for="nav-toggle" class="nav-toggle-label">
             <span></span>
         </label>
         <div class="logo">
-            <a href="#intro"></a>
             <img src="/assets/LogoMakr_0AGPcd.png" alt="logo" style="display:inline-block">
-            <span style="display:inline-block">Sukianto Suteja </span>
+            <a href="#intro">Sukianto Suteja</a>
         </div>
     </header>
     <div class="intro" id="intro">
@@ -171,11 +170,11 @@
             </div>
         </div>
     </div>
-    <div class="divider"></div>
+    <div class="divider" id="projects"></div>
     <div class="project-wrapper">
-        <h1 id="projects">Projects</h1>
-        <img src="/assets/T-worker.svg" alt="T-worker logo" class="project-img">
+        <h1>Projects</h1>
         <div class="project">
+            <img src="/assets/T-worker.svg" alt="T-worker logo" class="project-img">
             <h2>
                 T-Worker
             </h2>
@@ -191,9 +190,9 @@
                 <img src="/assets/github.svg" alt="github-logo">
             </a>
         </div>
-        <img src="/assets/Togather.svg" alt="togather team" class="project-img">
         <div class="project">
-            <h2 >
+            <img src="/assets/Togather.svg" alt="togather team" class="project-img">
+            <h2>
                 ToGather
             </h2>
             <p class="date">
@@ -203,12 +202,13 @@
                 I was one of the developer in this project, we applied pair programming technique in the development
                 process. My contributions are mostly on Firebase integration, database design and user experience (UX).
             </p>
-            <a href="https://github.com/bryantanuwijaya/ToGatherADProject">
+            <a href="https://github.com/bryantanuwijay  a/ToGatherADProject">
                 <img src="/assets/github.svg" alt="github-logo">
             </a>
         </div>
-        <img src="/assets/Monopoly-terminal.svg" alt="monopoly team" class="project-img">
+
         <div class="project">
+            <img src="/assets/Monopoly-terminal.svg" alt="monopoly team" class="project-img">
             <h2>
                 Monopoly-Terminal
             </h2>
@@ -216,34 +216,52 @@
                 April 2019
             </p>
             <p>
-                This is my first small Ruby project, we tried to replicate Monopoly board game in Ruby. The purpose of
+                This is my first small Ruby project, we replicated Monopoly board game in Ruby. The purpose of
                 this project is to experience Ruby and implementation of Ruby gems.
             </p>
             <a href="https://github.com/sukibeww/monopoly-terminal/blob/master/readme.md">
-            <img src="/assets/github.svg" alt="github-logo">
-        </a>
+                <img src="/assets/github.svg" alt="github-logo">
+            </a>
         </div>
     </div>
-    <div class="divider"></div>
-    <form name="contact" method="POST" data-netlify="true">
-        <p>
-            <label>Your Name: <input type="text" name="name" /></label>
-        </p>
-        <p>
-            <label>Your Email: <input type="email" name="email" /></label>
-        </p>
-        <p>
-            <label>Your Role: <select name="role[]" multiple>
-                    <option value="leader">Leader</option>
-                    <option value="follower">Follower</option>
-                </select></label>
-        </p>
-        <p>
-            <label>Message: <textarea name="message"></textarea></label>
-        </p>
-        <p>
-            <button type="submit">Send</button>
-        </p>
-    </form>
+    <div class="divider" id="contact"></div>
+    <div class="contact-wrapper">
+        <h1>
+            Contact me
+        </h1>
+        <div class="contact-box">
+            <form name="contact" method="POST" data-netlify="true">
+                <p>
+                    <label>Name: <input type="text" name="name" /></label>
+                </p>
+                <p>
+                    <label>Email: <input type="email" name="email" /></label>
+                </p>
+                <p>
+                    <label>Message: <textarea name="message"></textarea></label>
+                </p>
+                <p>
+                    <button type="submit">Send</button>
+                </p>
+            </form>
+            <div class="media-link">
+                <div class="link">
+                    <a href="https://github.com/sukibeww">
+                        <img src="/assets/github.svg" alt="github-logo">
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="https://www.facebook.com/aliongz">
+                        <img src="/assets/facebook.svg" alt="facebook-logo">
+                    </a>
+                </div>
+
+                <div class="link">
+                    <a href="https://www.instagram.com/sukialiong/?hl=en">
+                        <img src="/assets/instagram.svg" alt="instagram-logo">
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
