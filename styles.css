@@ -534,8 +534,9 @@ header {
 .contact-box p button {
     position: relative;
     top: 5vh;
-    align-self: center;
-    font-size: 2rem;
+    left: 30vw;
+    width: 25vw;
+    font-size: 1rem;
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 900;
     background-color: #9A38FC;
@@ -932,6 +933,8 @@ header {
 
     .contact-box p button {
         top: 25vh;
+        left: 35vw;
+        width: 20vw;
     }
 
     .media-link { 
