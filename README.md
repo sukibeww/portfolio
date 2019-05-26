@@ -52,6 +52,7 @@ My design is the amalgamation between cyperpunk and scandinavian interior art. I
 
 ## Personal logo 
 ![Logo](/assets/LogoMakr_0AGPcd.png "Logo")
+
 This logo is heavily insipred by Nintendo Switch's logo, I realise that nintendo switch logo relies on the similarity of their controller as their logo and used negative space and color to shows that their similarity is what makes them unique. Both of my first name and last name starts with an "S" and that's how i came up with this logo. 
 
 The tool that i used to create this logo:  
