@@ -39,7 +39,7 @@ This portfolio only consist of a single page seperated into few sections, which 
 ## Desktop
 ![Desktop](/assets/desktop-ver.png "Desktop browser")
 
-##Mobile 
+## Mobile 
 ![Mobile](/assets/mobile-ver.png "Mobile browser")
 
 ---
@@ -51,7 +51,7 @@ This portfolio only consist of a single page seperated into few sections, which 
 My design is the amalgamation between cyperpunk and scandinavian interior art. I choose scandinavian interior art because I personality think they are very soothing and calming to look at and cyberpunk to add my personality to the design itself. 
 
 ## Personal logo 
-![Logo](sukianto-suteja-portfolio_files/LogoMakr_0AGPcd.png "Logo")
+![Logo](/assets/LogoMakr_0AGPcd.png "Logo")
 This logo is heavily insipred by Nintendo Switch's logo, I realise that nintendo switch logo relies on the similarity of their controller as their logo and used negative space and color to shows that their similarity is what makes them unique. Both of my first name and last name starts with an "S" and that's how i came up with this logo. 
 
 The tool that i used to create this logo:  
@@ -60,7 +60,7 @@ Logomakr : [Click here!](https://logomakr.com/)
 ---
 # Project management 
 
-![Trello](assets\trello.JPG "Trello-board")
+![Trello](/assets/trello.JPG "Trello-board")
 Initially, I prioritized the product itself and planned to create the mock-up after. Throughout the development cycles, I realised that I often redesign the product on the development environment. Therefore, I tried to mock my product first and work on it after i decided on the design. My workflow was completely changed after that. 
 
 # Short questions
